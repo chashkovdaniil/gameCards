@@ -1,0 +1,12 @@
+import InterfaceCard from "../../interfaces/Card";
+
+export const ADD_CARD = 'ADD_CARD';
+export function addCard({id, content}: InterfaceCard) {
+  return {
+    type: ADD_CARD,
+    card: {
+      id,
+      content
+    }
+  };
+}
