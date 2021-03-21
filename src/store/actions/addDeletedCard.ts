@@ -1,4 +1,4 @@
-import InterfaceCard from "../../interfaces/Card";
+import InterfaceCard from "../../interfaces/interfaceCard";
 
 export const ADD_DELETED_CARD = 'ADD_DELETED_CARD';
 export function addDeletedCard({ id, content }: InterfaceCard) {
