@@ -1,8 +1,9 @@
 const initialState = {
   openedCards: [],
   deletedCards: [],
-  timer: '',
-  score: 0
+  timerFirstOpenCard: '',
+  score: 0,
+  isStarted: false
 };
 
 export default initialState;

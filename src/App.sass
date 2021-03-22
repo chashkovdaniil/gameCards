@@ -1,0 +1,33 @@
+.panel
+  padding: 40px
+  display: flex
+  justify-content: space-around
+  &_non-padding
+    padding: 0px
+.area
+  display: grid
+  grid-template: repeat(6, 70px) / repeat(6, 70px)
+  justify-content: center
+.card
+  width: 95%
+  height: 95%
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 20px
+  color: #fff
+  font-size: 24px
+  background: #593381
+  cursor: pointer
+  span
+    display: none
+  &_deleted
+    background: #be3535
+    span
+      display: block
+  &_opened
+    span
+      display: block
+@media screen and (max-width: 520px)
+  .area
+    grid-template: repeat(6, 50px) / repeat(6, 50px)
